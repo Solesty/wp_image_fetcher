@@ -49,6 +49,7 @@ window.onload = function () {
                 let progressBar = window.document.getElementById("progressBar");
                 progressBar.style = "display: none";
                 submitButton.style = "display: block";
+                submitButton.disabled = false;
             }
         }
     }
