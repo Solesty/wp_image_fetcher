@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content{
+    margin: 0 auto;
+}
+
+.form{
+    width: 500px;
+    padding: 30px;
+    /* margin-top: -250px; */
+    height: 100%;
+    box-shadow: 0 4px 8px 0 #b32b302f; /* rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    border-radius: 5px
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item textarea {
+    margin-top: 10px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 20px;;
+    border-color: #2b2021;
+}
+
+.form-item textarea:focus {
+    border-color: #2b2021;
+}
+
+.submit-button{
+    margin-top: 10px;
+    height: 50px;
+    width: 200px;
+    border: 0px;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #ef1c23;
+    color: white;
+}
+
+.submit-button:hover, .submit-button:active{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#resultSection{
+    margin-top: 30px;
+    height: 300px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 #b32b302f; /* rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#resultSection div{
+    margin-top: 5px;
+}
+
+#progressBar{
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ef1c23;
+    border-radius: 5px;
+    height: 10px;
+    display: none;
+}
+
+#progressBar > div {
+    width: 100%;
+    background-color: #ef1c23;
+    height: 10px;
+}
