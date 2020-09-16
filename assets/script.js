@@ -29,7 +29,7 @@ window.onload = function () {
             let percentage = (index / idArrays.length) * 100;
             if (imageID) {
                 imageID = imageID.trim();
-                let response = await fetch('http://dev.regnify.io/namco-refurbs/wp-json/wp/v2/media/' + imageID);
+                let response = await fetch('https://namco-refurbs.com/wp-json/wp/v2/media/' + imageID);
                 if (index == 0) {
                     resultSection.innerHTML = "";
                 }
